@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container .search {
+  background-color: #fff;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  transition: width 0.3s ease;
+}
+
+.search-container .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.3s ease;
+}
+
+.search-container.active .search {
+    width: 200px;
+}
+
+.search-container.active .btn {
+    transform: translateX(198px);
+}
+
